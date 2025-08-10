@@ -35,7 +35,6 @@ public class S3Service
 
         await fileTransferUtility.UploadAsync(stream, _bucketName, fileName);
 
-        // Return public URL
         return $"https://{_bucketName}.s3.{_s3Client.Config.RegionEndpoint.SystemName}.amazonaws.com/{fileName}";
     }
 }

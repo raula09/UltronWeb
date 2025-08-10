@@ -4,7 +4,7 @@ namespace ProductWeb.Models
 {
     public class Product
     {
-        [BsonId]  // Marks this as the MongoDB _id field
+        [BsonId] 
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; } = ObjectId.GenerateNewId().ToString();
 

@@ -16,9 +16,8 @@ namespace ProductWeb.Models
         public string VerificationCode { get; set; }
         public bool IsVerified { get; set; } = false;
 
-        public string PasswordHash { get; set; } // <-- add this!
+        public string PasswordHash { get; set; } 
 
-        // Optional properties only for login input, ignored by MongoDB
         [BsonIgnore]
         public string Password { get; set; }
 

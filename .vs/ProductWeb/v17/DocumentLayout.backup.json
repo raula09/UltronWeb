@@ -99,8 +99,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-08-08T13:36:15.957Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -110,7 +109,7 @@
               "RelativeDocumentMoniker": "ProductWeb\\.gitignore",
               "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\.gitignore",
               "RelativeToolTip": "ProductWeb\\.gitignore",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAowDQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-08-10T10:14:09.93Z",
               "EditorCaption": ""
@@ -125,8 +124,7 @@
               "RelativeToolTip": "ProductWeb\\Controllers\\AccountController.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAqwEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:37:41.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T13:37:41.274Z"
             },
             {
               "$type": "Document",
@@ -138,8 +136,7 @@
               "RelativeToolTip": "ProductWeb\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:38:47.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T13:38:47.789Z"
             },
             {
               "$type": "Document",
@@ -151,8 +148,7 @@
               "RelativeToolTip": "ProductWeb\\Controllers\\JwtTokenGenerator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T09:45:06.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T09:45:06.829Z"
             },
             {
               "$type": "Document",
@@ -164,8 +160,7 @@
               "RelativeToolTip": "ProductWeb\\Data\\ProductRepository.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAUwBMAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:38:35.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T13:38:35.063Z"
             },
             {
               "$type": "Document",
@@ -177,8 +172,7 @@
               "RelativeToolTip": "ProductWeb\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-08T13:39:20.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T13:39:20.161Z"
             },
             {
               "$type": "Document",
@@ -190,8 +184,7 @@
               "RelativeToolTip": "ProductWeb\\Program.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:57:36.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T13:57:36.029Z"
             },
             {
               "$type": "Document",
@@ -203,8 +196,7 @@
               "RelativeToolTip": "ProductWeb\\Models\\LoginFormRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T09:57:25.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T09:57:25.318Z"
             },
             {
               "$type": "Document",
@@ -216,8 +208,7 @@
               "RelativeToolTip": "ProductWeb\\Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:38:57.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T13:38:57.774Z"
             },
             {
               "$type": "Document",
@@ -229,8 +220,7 @@
               "RelativeToolTip": "ProductWeb\\Models\\JwtSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T09:42:00.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T09:42:00.612Z"
             },
             {
               "$type": "Document",
@@ -242,8 +232,7 @@
               "RelativeToolTip": "ProductWeb\\Controllers\\ProductsController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAxwDAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:37:54.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T13:37:54.079Z"
             },
             {
               "$type": "Document",
@@ -255,8 +244,7 @@
               "RelativeToolTip": "ProductWeb\\Controllers\\EmailController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T08:36:03.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T08:36:03.074Z"
             },
             {
               "$type": "Document",
@@ -268,8 +256,7 @@
               "RelativeToolTip": "ProductWeb\\Services\\BlobService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:39:09.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T13:39:09.516Z"
             },
             {
               "$type": "Document",
@@ -281,8 +268,7 @@
               "RelativeToolTip": "ProductWeb\\Data\\UserRepository.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAmwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:38:21.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T13:38:21.639Z"
             },
             {
               "$type": "Document",
@@ -294,8 +280,7 @@
               "RelativeToolTip": "ProductWeb\\Services\\EmailService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T08:34:24.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T08:34:24.186Z"
             },
             {
               "$type": "Document",
@@ -307,8 +292,7 @@
               "RelativeToolTip": "ProductWeb\\Models\\EmailSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T08:35:38.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T08:35:38.488Z"
             },
             {
               "$type": "Document",
@@ -320,8 +304,7 @@
               "RelativeToolTip": "ProductWeb\\Services\\S3Service.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAgwBYAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T14:29:27.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T14:29:27.891Z"
             },
             {
               "$type": "Document",
@@ -333,8 +316,7 @@
               "RelativeToolTip": "ProductWeb\\Data\\MongoDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:38:09.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T13:38:09.966Z"
             }
           ]
         },

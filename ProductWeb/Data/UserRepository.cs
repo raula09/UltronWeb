@@ -49,6 +49,5 @@ namespace ProductWeb.Data
             return _users.Find(filter).FirstOrDefault();
         }
 
-        // other methods (update, delete) can be added similarly
     }
 }

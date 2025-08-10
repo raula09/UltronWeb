@@ -14,7 +14,6 @@ namespace ProductWeb.Services
             _blobServiceClient = new BlobServiceClient(conn);
         }
 
-        // This method uses async because Azure SDK upload is async. You can call .Wait() if you must use sync.
         public async Task<string> UploadFileAsync(IFormFile file)
         {
             var containerClient = _blobServiceClient.GetBlobContainerClient(_containerName);

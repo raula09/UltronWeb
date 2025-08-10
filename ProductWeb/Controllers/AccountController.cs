@@ -11,13 +11,13 @@ public class AccountController : ControllerBase
 {
     private readonly UserRepository _users;
     private readonly EmailService _emailService;
-    private readonly JwtTokenGenerator _jwtTokenGenerator; // Added missing field  
+    private readonly JwtTokenGenerator _jwtTokenGenerator; 
 
     public AccountController(UserRepository userRepo, EmailService emailService, JwtTokenGenerator jwtTokenGenerator)
     {
         _users = userRepo;
         _emailService = emailService;
-        _jwtTokenGenerator = jwtTokenGenerator; // Initialize the field  
+        _jwtTokenGenerator = jwtTokenGenerator;
     }
 
     [HttpPost("register")]
