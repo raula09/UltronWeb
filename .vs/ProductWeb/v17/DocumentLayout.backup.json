@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -82,11 +86,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ProductWeb.csproj",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\ProductWeb.csproj",
               "RelativeDocumentMoniker": "ProductWeb\\ProductWeb.csproj",
@@ -100,20 +104,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Program.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Program.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Program.cs",
-              "RelativeToolTip": "ProductWeb\\Program.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:57:36.029Z",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\.gitignore",
+              "RelativeDocumentMoniker": "ProductWeb\\.gitignore",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\.gitignore",
+              "RelativeToolTip": "ProductWeb\\.gitignore",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-10T10:14:09.93Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Controllers\\AccountController.cs",
@@ -126,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\User.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Models\\User.cs",
@@ -139,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "JwtTokenGenerator.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\JwtTokenGenerator.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Controllers\\JwtTokenGenerator.cs",
@@ -152,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Data\\ProductRepository.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Data\\ProductRepository.cs",
@@ -165,12 +169,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\appsettings.json",
               "RelativeDocumentMoniker": "ProductWeb\\appsettings.json",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\appsettings.json*",
-              "RelativeToolTip": "ProductWeb\\appsettings.json*",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\appsettings.json",
+              "RelativeToolTip": "ProductWeb\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-08-08T13:39:20.161Z",
@@ -178,7 +182,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Program.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Program.cs",
+              "RelativeToolTip": "ProductWeb\\Program.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T13:57:36.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "LoginFormRequest.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\LoginFormRequest.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Models\\LoginFormRequest.cs",
@@ -191,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\Product.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Models\\Product.cs",
@@ -204,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "JwtSettings.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\JwtSettings.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Models\\JwtSettings.cs",
@@ -217,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Controllers\\ProductsController.cs",
@@ -230,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "EmailController.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\EmailController.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Controllers\\EmailController.cs",
@@ -243,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "BlobService.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\BlobService.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Services\\BlobService.cs",
@@ -256,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Data\\UserRepository.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Data\\UserRepository.cs",
@@ -269,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Services\\EmailService.cs",
@@ -282,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "EmailSettings.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\EmailSettings.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Models\\EmailSettings.cs",
@@ -295,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "S3Service.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\S3Service.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Services\\S3Service.cs",
@@ -308,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "MongoDbContext.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Data\\MongoDbContext.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Data\\MongoDbContext.cs",
