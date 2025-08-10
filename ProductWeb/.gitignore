@@ -1,0 +1,52 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio cache & temp files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.userprefs
+*.DotSettings.user
+_ReSharper*/
+
+# Rider IDE files
+.idea/
+
+# VS Code files
+.vscode/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Publish folder
+publish/
+
+# App config secrets (use env vars instead)
+appsettings.*.json
+
+# Database files (if any local DBs)
+*.mdf
+*.ldf
+*.sqlite
+
+# MongoDB BSON dump or backups if any
+*.bson
+
+# Npm/Yarn (if you add any frontend)
+node_modules/
+
+# Email service files - generally safe, but ignore any secrets if stored
+*.secret
+
+# Docker files if any, ignore build cache
+docker-compose.override.yml
+Dockerfile*
+
+# Misc
+*.pid
