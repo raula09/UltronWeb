@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using ProductWeb.Data;
 using ProductWeb.Models;
-
+using ProductWeb.Repositories;
 
 namespace ProductWeb.Controllers
 {
     [Route("products")]
-    public class ProductsController : Controller
+    [ApiController]
+    public class ProductsController : ControllerBase
     {
         private readonly ProductRepository _products;
 
@@ -24,8 +24,15 @@ namespace ProductWeb.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        [HttpPost("products/create")]
-        public IActionResult Create([FromForm] string name, [FromForm] string description, [FromForm] decimal price)
+        [HttpPost("create")]
+        public IActionResult Create(
+            [FromForm] string name,
+            [FromForm] string description,
+            [FromForm] string size,
+            [FromForm] string color,
+            [FromForm] string category,
+            [FromForm] string material,
+            [FromForm] decimal price)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
@@ -36,6 +43,10 @@ namespace ProductWeb.Controllers
             {
                 Name = name,
                 Description = description,
+                Size = size,
+                Color = color,
+                Category = category,
+                Material = material,
                 Price = price
             };
 
@@ -51,20 +62,34 @@ namespace ProductWeb.Controllers
             return Ok(p);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost("update/{id}")]
-        public IActionResult Update(string id, [FromForm] string name, [FromForm] string description, [FromForm] decimal price)
+        public IActionResult Update(
+            string id,
+            [FromForm] string name,
+            [FromForm] string description,
+            [FromForm] string size,
+            [FromForm] string color,
+            [FromForm] string category,
+            [FromForm] string material,
+            [FromForm] decimal price)
         {
             var product = _products.GetById(id);
             if (product == null) return NotFound();
 
             if (!string.IsNullOrWhiteSpace(name)) product.Name = name;
             if (!string.IsNullOrWhiteSpace(description)) product.Description = description;
+            if (!string.IsNullOrWhiteSpace(size)) product.Size = size;
+            if (!string.IsNullOrWhiteSpace(color)) product.Color = color;
+            if (!string.IsNullOrWhiteSpace(category)) product.Category = category;
+            if (!string.IsNullOrWhiteSpace(material)) product.Material = material;
             if (price > 0) product.Price = price;
 
             _products.Update(product);
             return Ok(product);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost("delete/{id}")]
         public IActionResult Delete(string id)
         {

@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity.Data;
-using Microsoft.AspNetCore.Mvc;
-using ProductWeb.Data;
+﻿using Microsoft.AspNetCore.Mvc;
 using ProductWeb.Models;
+using ProductWeb.Repositories;
+using ProductWeb.Services;
 using System;
 using System.Threading.Tasks;
 
@@ -11,7 +11,7 @@ public class AccountController : ControllerBase
 {
     private readonly UserRepository _users;
     private readonly EmailService _emailService;
-    private readonly JwtTokenGenerator _jwtTokenGenerator; 
+    private readonly JwtTokenGenerator _jwtTokenGenerator;
 
     public AccountController(UserRepository userRepo, EmailService emailService, JwtTokenGenerator jwtTokenGenerator)
     {
@@ -19,32 +19,35 @@ public class AccountController : ControllerBase
         _emailService = emailService;
         _jwtTokenGenerator = jwtTokenGenerator;
     }
-
     [HttpPost("register")]
     public async Task<IActionResult> Register(
     [FromForm] string username,
     [FromForm] string email,
+    [FromForm] string phoneNumber,
     [FromForm] string password)
     {
         if (string.IsNullOrWhiteSpace(username) ||
             string.IsNullOrWhiteSpace(email) ||
+            string.IsNullOrWhiteSpace(phoneNumber) ||
             string.IsNullOrWhiteSpace(password))
         {
-            return BadRequest("Username, email and password are required.");
+            return BadRequest("All fields are required.");
         }
 
         if (_users.GetByEmail(email) != null)
             return BadRequest("Email already registered.");
 
-        var verificationCode = new Random().Next(100000, 999999).ToString();
+        var verificationCode = GenerateVerificationCode();
 
         var user = new User
         {
             Username = username,
             Email = email,
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword(password),  
+            PhoneNumber = phoneNumber,
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(password),
             VerificationCode = verificationCode,
-            IsVerified = false
+            IsVerified = false,
+           
         };
 
         _users.Create(user);
@@ -60,35 +63,59 @@ public class AccountController : ControllerBase
 
 
     [HttpPost("login")]
-    public IActionResult Login([FromForm] LoginFormRequest request)
+    public async Task<IActionResult> Login(
+        [FromForm] string email,
+        [FromForm] string password)
     {
-        var user = _users.GetByEmail(request.Email);
-        if (user == null || string.IsNullOrEmpty(request.Password) || string.IsNullOrEmpty(user.PasswordHash) ||
-      !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
-        {
-            return Unauthorized("Invalid credentials");
-        }
+        if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+            return BadRequest("Email and password are required.");
 
-        if (!user.IsVerified)
-        {
-            if (string.IsNullOrWhiteSpace(request.LoginVerificationCode))
-                return Unauthorized("Email not verified. Please provide verification code.");
+        var user = _users.GetByEmail(email);
+        if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
+            return Unauthorized("Invalid credentials.");
 
-            if (user.VerificationCode != request.LoginVerificationCode)
-                return Unauthorized("Invalid verification code.");
+        var verificationCode = GenerateVerificationCode();
+        user.VerificationCode = verificationCode;
+        _users.Update(user);
 
-            user.IsVerified = true;
-            user.VerificationCode = null;
-            _users.Update(user);
-        }
+        await _emailService.SendEmailAsync(
+            email,
+            "Your login verification code",
+            $"Your login verification code is: {verificationCode}"
+        );
+
+        return Ok(new { message = "Verification code sent to email." });
+    }
+
+
+    [HttpPost("verify")]
+    public IActionResult Verify([FromForm] string code)
+    {
+        if (string.IsNullOrWhiteSpace(code))
+            return BadRequest("Verification code is required.");
+
+        var user = _users.GetByVerificationCode(code);
+        if (user == null)
+            return BadRequest("Invalid verification code.");
+
+        user.IsVerified = true;
+        user.VerificationCode = null;
+        _users.Update(user);
 
         var token = _jwtTokenGenerator.GenerateToken(user);
+        var bearerToken = "Bearer " + token;
 
         return Ok(new
         {
-            token,
-            user = new { user.Id, user.Username, user.Email, user.Role }
+            message = "Verification successful. You are logged in.",
+            token = bearerToken,
+            user = new { user.Id, user.Username, user.Email, user.PhoneNumber, user.Role }
         });
     }
 
+    private string GenerateVerificationCode()
+    {
+        var random = new Random();
+        return random.Next(100000, 999999).ToString();
+    }
 }

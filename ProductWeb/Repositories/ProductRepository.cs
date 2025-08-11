@@ -1,7 +1,8 @@
 ﻿using MongoDB.Driver;
+using ProductWeb.Data;
 using ProductWeb.Models;
 
-namespace ProductWeb.Data
+namespace ProductWeb.Repositories
 {
     public class ProductRepository
     {

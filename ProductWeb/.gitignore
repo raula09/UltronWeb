@@ -51,3 +51,6 @@ Dockerfile*
 # Misc
 *.pid
 appsettings.*.json
+# Ignore appsettings files
+appsettings.json
+appsettings.*.json

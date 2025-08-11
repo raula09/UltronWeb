@@ -12,11 +12,13 @@ namespace ProductWeb.Models
         public string Username { get; set; }
         public string Email { get; set; }
         public string Role { get; set; } = "User";
-
+        public string PhoneNumber { get; set; }
         public string VerificationCode { get; set; }
         public bool IsVerified { get; set; } = false;
 
         public string PasswordHash { get; set; } 
+
+        public DateTime CreatedAt { get; set; }
 
         [BsonIgnore]
         public string Password { get; set; }
