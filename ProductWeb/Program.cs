@@ -75,6 +75,8 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
+builder.Services.AddSingleton<CartRepository>();
+builder.Services.AddSingleton<CheckoutLogRepository>();
 
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));

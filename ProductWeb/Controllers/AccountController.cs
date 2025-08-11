@@ -193,7 +193,45 @@ public class AccountController : ControllerBase
 
         return Ok(new { message = "Logged out successfully." });
     }
+    [HttpPost("password-reset-request")]
+    public async Task<IActionResult> PasswordResetRequest([FromForm] string email)
+    {
+        if (string.IsNullOrWhiteSpace(email))
+            return BadRequest("Email is required.");
 
+        var user = _users.GetByEmail(email);
+        if (user == null)
+            return BadRequest("Email not found.");
+
+        var resetCode = GenerateVerificationCode();
+        user.PasswordResetCode = resetCode;  
+        _users.Update(user);
+
+        await _emailService.SendEmailAsync(
+            email,
+            "Your Password Reset Code",
+            $"Your password reset code is: {resetCode}"
+        );
+
+        return Ok(new { message = "Password reset code sent to your email." });
+    }
+
+    [HttpPost("password-reset")]
+    public IActionResult PasswordReset([FromForm] string code, [FromForm] string newPassword)
+    {
+        if (string.IsNullOrWhiteSpace(code) || string.IsNullOrWhiteSpace(newPassword))
+            return BadRequest("Code and new password are required.");
+
+        var user = _users.GetByPasswordResetCode(code);  
+        if (user == null)
+            return BadRequest("Invalid password reset code.");
+
+        user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(newPassword);
+        user.PasswordResetCode = null;
+        _users.Update(user);
+
+        return Ok(new { message = "Password has been reset successfully." });
+    }
     private string GenerateVerificationCode()
     {
         var random = new Random();

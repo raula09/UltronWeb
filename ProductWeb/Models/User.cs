@@ -17,7 +17,7 @@ namespace ProductWeb.Models
         public bool IsVerified { get; set; } = false;
 
         public string PasswordHash { get; set; }
-      
+        public string PasswordResetCode { get; set; }
         public List<RefreshToken> RefreshTokens { get; set; } = new();
 
         public DateTime CreatedAt { get; set; }

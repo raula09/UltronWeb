@@ -32,11 +32,17 @@ namespace ProductWeb.Controllers
             [FromForm] string color,
             [FromForm] string category,
             [FromForm] string material,
-            [FromForm] decimal price)
+            [FromForm] decimal price,
+            [FromForm] int quantity)  
         {
             if (string.IsNullOrWhiteSpace(name))
             {
                 return BadRequest("Name required.");
+            }
+
+            if (quantity < 0)
+            {
+                return BadRequest("Quantity cannot be negative.");
             }
 
             var product = new Product
@@ -47,7 +53,8 @@ namespace ProductWeb.Controllers
                 Color = color,
                 Category = category,
                 Material = material,
-                Price = price
+                Price = price,
+                Quantity = quantity 
             };
 
             _products.Create(product);
@@ -72,7 +79,8 @@ namespace ProductWeb.Controllers
             [FromForm] string color,
             [FromForm] string category,
             [FromForm] string material,
-            [FromForm] decimal price)
+            [FromForm] decimal price,
+            [FromForm] int? quantity)  
         {
             var product = _products.GetById(id);
             if (product == null) return NotFound();
@@ -84,6 +92,13 @@ namespace ProductWeb.Controllers
             if (!string.IsNullOrWhiteSpace(category)) product.Category = category;
             if (!string.IsNullOrWhiteSpace(material)) product.Material = material;
             if (price > 0) product.Price = price;
+
+            if (quantity.HasValue)
+            {
+                if (quantity.Value < 0)
+                    return BadRequest("Quantity cannot be negative.");
+                product.Quantity = quantity.Value;
+            }
 
             _products.Update(product);
             return Ok(product);

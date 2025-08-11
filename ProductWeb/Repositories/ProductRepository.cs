@@ -1,6 +1,7 @@
 ﻿using MongoDB.Driver;
 using ProductWeb.Data;
 using ProductWeb.Models;
+using System.Collections.Generic;
 
 namespace ProductWeb.Repositories
 {
@@ -16,6 +17,13 @@ namespace ProductWeb.Repositories
         public void Create(Product product)
         {
             _products.InsertOne(product);
+        }
+
+        public void UpdateQuantity(string id, int newQuantity)
+        {
+            var filter = Builders<Product>.Filter.Eq(p => p.Id, id);
+            var update = Builders<Product>.Update.Set(p => p.Quantity, newQuantity);
+            _products.UpdateOne(filter, update);
         }
 
         public List<Product> GetAll()

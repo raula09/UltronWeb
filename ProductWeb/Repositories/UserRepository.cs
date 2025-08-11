@@ -18,6 +18,13 @@ namespace ProductWeb.Repositories
         {
             _users.InsertOne(user);
         }
+
+        public User GetByPasswordResetCode(string code)
+        {
+            var filter = Builders<User>.Filter.Eq(u => u.PasswordResetCode, code);
+            return _users.Find(filter).FirstOrDefault();
+        }
+
         public void Update(User user)
         {
             var filter = Builders<User>.Filter.Eq(u => u.Id, user.Id);
