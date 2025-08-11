@@ -6,8 +6,43 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
 using ProductWeb.Repositories;
-
+using System.Threading.RateLimiting;
+using System.Net;
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddRateLimiter(options =>
+{
+    options.GlobalLimiter = PartitionedRateLimiter.Create<HttpContext, IPAddress>(httpContext =>
+    {
+        var ip = httpContext.Connection.RemoteIpAddress ?? IPAddress.None;
+        return RateLimitPartition.GetFixedWindowLimiter(ip, _ => new FixedWindowRateLimiterOptions
+        {
+            PermitLimit = 100,
+            Window = TimeSpan.FromMinutes(1),
+            QueueProcessingOrder = QueueProcessingOrder.OldestFirst,
+            QueueLimit = 0
+        });
+    });
+
+    options.AddPolicy("AuthEndpoints", httpContext =>
+    {
+        var ip = httpContext.Connection.RemoteIpAddress ?? IPAddress.None;
+        return RateLimitPartition.GetTokenBucketLimiter(ip, _ => new TokenBucketRateLimiterOptions
+        {
+            TokenLimit = 5,
+            QueueLimit = 0,
+            ReplenishmentPeriod = TimeSpan.FromHours(1),
+            TokensPerPeriod = 5,
+            AutoReplenishment = true
+        });
+    });
+
+    options.OnRejected = (context, token) =>
+    {
+        context.HttpContext.Response.StatusCode = 429;
+        return new ValueTask();
+    };
+});
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddEndpointsApiExplorer();
@@ -73,6 +108,7 @@ builder.Services.AddAuthentication(options =>
         ClockSkew = TimeSpan.Zero
     };
 });
+builder.Services.AddSingleton<JwtRepository>();
 
 builder.Services.AddAuthorization(options =>
 {
@@ -99,6 +135,7 @@ app.UseSwaggerUI(c =>
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseRateLimiter();
 
 app.MapControllers();
 app.Run();

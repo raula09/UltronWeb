@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\repositories\\jwtrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\repositories\\jwtrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\models\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\models\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\controllers\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\controllers\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\services\\s3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,20 +67,12 @@
       "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\models\\loginformrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\models\\loginformrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\models\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\models\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,20 +95,8 @@
       "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\controllers\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\controllers\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|solutionrelative:productweb\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20B891A0-FED4-4839-BB65-60DC0505E536}|ProductWeb\\ProductWeb.csproj|c:\\users\\raul0\\source\\repos\\productweb\\productweb\\productweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -102,11 +110,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "ProductWeb.csproj",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\ProductWeb.csproj",
               "RelativeDocumentMoniker": "ProductWeb\\ProductWeb.csproj",
@@ -119,250 +127,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "ProductWeb\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:38:21.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BlobService.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\BlobService.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Services\\BlobService.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\BlobService.cs",
-              "RelativeToolTip": "ProductWeb\\Services\\BlobService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:39:09.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\EmailService.cs",
-              "RelativeToolTip": "ProductWeb\\Services\\EmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T08:34:24.186Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "S3Service.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\S3Service.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Services\\S3Service.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\S3Service.cs",
-              "RelativeToolTip": "ProductWeb\\Services\\S3Service.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAgwCQAAAAAAAAAAAAAAA==",
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Models\\RefreshToken.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\RefreshToken.cs",
+              "RelativeToolTip": "ProductWeb\\Models\\RefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T14:29:27.891Z"
+              "WhenOpened": "2025-08-11T07:16:05.635Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Program.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Program.cs",
               "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Program.cs",
               "RelativeToolTip": "ProductWeb\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAqwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-08T13:57:36.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\appsettings.json",
               "RelativeDocumentMoniker": "ProductWeb\\appsettings.json",
               "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\appsettings.json",
               "RelativeToolTip": "ProductWeb\\appsettings.json",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowEYAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-08-08T13:39:20.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\.gitignore",
-              "RelativeDocumentMoniker": "ProductWeb\\.gitignore",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\.gitignore",
-              "RelativeToolTip": "ProductWeb\\.gitignore",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-10T10:14:09.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Repositories\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "ProductWeb\\Repositories\\ProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:38:35.063Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthRepository.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\AuthRepository.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Repositories\\AuthRepository.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\AuthRepository.cs",
-              "RelativeToolTip": "ProductWeb\\Repositories\\AuthRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T06:09:17.009Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\User.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Models\\User.cs",
               "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\User.cs",
               "RelativeToolTip": "ProductWeb\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:38:47.789Z"
+              "WhenOpened": "2025-08-08T13:38:47.789Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\Product.cs",
-              "RelativeToolTip": "ProductWeb\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:38:57.774Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginFormRequest.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\LoginFormRequest.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Models\\LoginFormRequest.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\LoginFormRequest.cs",
-              "RelativeToolTip": "ProductWeb\\Models\\LoginFormRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T09:57:25.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "JwtSettings.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\JwtSettings.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Models\\JwtSettings.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\JwtSettings.cs",
-              "RelativeToolTip": "ProductWeb\\Models\\JwtSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T09:42:00.612Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "EmailSettings.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\EmailSettings.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Models\\EmailSettings.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\EmailSettings.cs",
-              "RelativeToolTip": "ProductWeb\\Models\\EmailSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T08:35:38.488Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\DTO\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Models\\DTO\\RegisterDto.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\DTO\\RegisterDto.cs",
-              "RelativeToolTip": "ProductWeb\\Models\\DTO\\RegisterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T06:14:30.828Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\DTO\\LoginDto.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Models\\DTO\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\DTO\\LoginDto.cs",
-              "RelativeToolTip": "ProductWeb\\Models\\DTO\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T06:14:59.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MongoDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Data\\MongoDbContext.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Data\\MongoDbContext.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Data\\MongoDbContext.cs",
-              "RelativeToolTip": "ProductWeb\\Data\\MongoDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:38:09.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TestController.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\TestController.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Controllers\\TestController.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\TestController.cs",
-              "RelativeToolTip": "ProductWeb\\Controllers\\TestController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T16:31:17.234Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 5,
               "Title": "JwtTokenGenerator.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\JwtTokenGenerator.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Controllers\\JwtTokenGenerator.cs",
               "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\JwtTokenGenerator.cs",
               "RelativeToolTip": "ProductWeb\\Controllers\\JwtTokenGenerator.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwBMAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T09:45:06.829Z"
+              "WhenOpened": "2025-08-10T09:45:06.829Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "ProductWeb\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAzAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ProductWeb\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAIwHkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:37:54.079Z"
+              "WhenOpened": "2025-08-08T13:37:41.274Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 2,
+              "Title": "JwtRepository.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\JwtRepository.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Repositories\\JwtRepository.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\JwtRepository.cs",
+              "RelativeToolTip": "ProductWeb\\Repositories\\JwtRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T07:19:57.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "EmailController.cs",
               "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\EmailController.cs",
               "RelativeDocumentMoniker": "ProductWeb\\Controllers\\EmailController.cs",
@@ -374,15 +230,196 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "ProductWeb\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "ProductWeb\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAkwDIAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Models\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\JwtSettings.cs",
+              "RelativeToolTip": "ProductWeb\\Models\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T13:37:41.274Z"
+              "WhenOpened": "2025-08-10T09:42:00.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\.gitignore",
+              "RelativeDocumentMoniker": "ProductWeb\\.gitignore",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\.gitignore",
+              "RelativeToolTip": "ProductWeb\\.gitignore",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-10T10:14:09.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "S3Service.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\S3Service.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Services\\S3Service.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\S3Service.cs",
+              "RelativeToolTip": "ProductWeb\\Services\\S3Service.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T14:29:27.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\EmailService.cs",
+              "RelativeToolTip": "ProductWeb\\Services\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T08:34:24.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BlobService.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\BlobService.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Services\\BlobService.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Services\\BlobService.cs",
+              "RelativeToolTip": "ProductWeb\\Services\\BlobService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T13:39:09.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "ProductWeb\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T13:38:21.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "ProductWeb\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T13:38:35.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthRepository.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\AuthRepository.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Repositories\\AuthRepository.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Repositories\\AuthRepository.cs",
+              "RelativeToolTip": "ProductWeb\\Repositories\\AuthRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T06:09:17.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\Product.cs",
+              "RelativeToolTip": "ProductWeb\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T13:38:57.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginFormRequest.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\LoginFormRequest.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Models\\LoginFormRequest.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\LoginFormRequest.cs",
+              "RelativeToolTip": "ProductWeb\\Models\\LoginFormRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T09:57:25.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Models\\EmailSettings.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\EmailSettings.cs",
+              "RelativeToolTip": "ProductWeb\\Models\\EmailSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T08:35:38.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\DTO\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Models\\DTO\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\DTO\\RegisterDto.cs",
+              "RelativeToolTip": "ProductWeb\\Models\\DTO\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T06:14:30.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\DTO\\LoginDto.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Models\\DTO\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Models\\DTO\\LoginDto.cs",
+              "RelativeToolTip": "ProductWeb\\Models\\DTO\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T06:14:59.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MongoDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Data\\MongoDbContext.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Data\\MongoDbContext.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Data\\MongoDbContext.cs",
+              "RelativeToolTip": "ProductWeb\\Data\\MongoDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T13:38:09.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\TestController.cs",
+              "RelativeToolTip": "ProductWeb\\Controllers\\TestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T16:31:17.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ProductWeb\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\raul0\\source\\repos\\ProductWeb\\ProductWeb\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ProductWeb\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T13:37:54.079Z"
             }
           ]
         },

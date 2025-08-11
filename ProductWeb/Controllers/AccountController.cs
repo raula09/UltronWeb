@@ -3,7 +3,9 @@ using ProductWeb.Models;
 using ProductWeb.Repositories;
 using ProductWeb.Services;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 [Route("account")]
 [ApiController]
@@ -12,19 +14,26 @@ public class AccountController : ControllerBase
     private readonly UserRepository _users;
     private readonly EmailService _emailService;
     private readonly JwtTokenGenerator _jwtTokenGenerator;
+    private readonly JwtRepository _jwtRepository;
 
-    public AccountController(UserRepository userRepo, EmailService emailService, JwtTokenGenerator jwtTokenGenerator)
+    public AccountController(
+        UserRepository userRepo,
+        EmailService emailService,
+        JwtTokenGenerator jwtTokenGenerator,
+        JwtRepository jwtRepository)
     {
         _users = userRepo;
         _emailService = emailService;
         _jwtTokenGenerator = jwtTokenGenerator;
+        _jwtRepository = jwtRepository;
     }
+
     [HttpPost("register")]
     public async Task<IActionResult> Register(
-    [FromForm] string username,
-    [FromForm] string email,
-    [FromForm] string phoneNumber,
-    [FromForm] string password)
+        [FromForm] string username,
+        [FromForm] string email,
+        [FromForm] string phoneNumber,
+        [FromForm] string password)
     {
         if (string.IsNullOrWhiteSpace(username) ||
             string.IsNullOrWhiteSpace(email) ||
@@ -47,7 +56,6 @@ public class AccountController : ControllerBase
             PasswordHash = BCrypt.Net.BCrypt.HashPassword(password),
             VerificationCode = verificationCode,
             IsVerified = false,
-           
         };
 
         _users.Create(user);
@@ -61,7 +69,6 @@ public class AccountController : ControllerBase
         return Ok(new { message = "User created. Verification code sent to email." });
     }
 
-
     [HttpPost("login")]
     public async Task<IActionResult> Login(
         [FromForm] string email,
@@ -74,22 +81,34 @@ public class AccountController : ControllerBase
         if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
             return Unauthorized("Invalid credentials.");
 
-        var verificationCode = GenerateVerificationCode();
-        user.VerificationCode = verificationCode;
-        _users.Update(user);
+        if (!user.IsVerified)
+            return Unauthorized("User not verified.");
 
-        await _emailService.SendEmailAsync(
-            email,
-            "Your login verification code",
-            $"Your login verification code is: {verificationCode}"
-        );
+        var ipAddress = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "unknown";
+        var refreshToken = _jwtRepository.GenerateRefreshToken(ipAddress);
 
-        return Ok(new { message = "Verification code sent to email." });
+        await _jwtRepository.AddRefreshTokenAsync(user.Id, refreshToken);
+
+        var accessToken = _jwtTokenGenerator.GenerateToken(user);
+
+        var cookieOptions = new CookieOptions
+        {
+            HttpOnly = true,
+            Secure = true,
+            Expires = refreshToken.ExpiresAt,
+            SameSite = SameSiteMode.Strict
+        };
+        Response.Cookies.Append("refreshToken", refreshToken.Token, cookieOptions);
+
+        return Ok(new
+        {
+            message = "Login successful.",
+            token = "Bearer " + accessToken,
+            user = new { user.Id, user.Username, user.Email, user.PhoneNumber, user.Role }
+        });
     }
-
-
     [HttpPost("verify")]
-    public IActionResult Verify([FromForm] string code)
+    public async Task<IActionResult> Verify([FromForm] string code)
     {
         if (string.IsNullOrWhiteSpace(code))
             return BadRequest("Verification code is required.");
@@ -102,6 +121,12 @@ public class AccountController : ControllerBase
         user.VerificationCode = null;
         _users.Update(user);
 
+        await _emailService.SendEmailAsync(
+            user.Email,
+            "Welcome to Ultron!",
+            $"Hi {user.Username},\n\nThank you for verifying your account and joining Ultron. We're excited to have you with us!\n\nBest regards,\nThe Ultron Team"
+        );
+
         var token = _jwtTokenGenerator.GenerateToken(user);
         var bearerToken = "Bearer " + token;
 
@@ -111,6 +136,62 @@ public class AccountController : ControllerBase
             token = bearerToken,
             user = new { user.Id, user.Username, user.Email, user.PhoneNumber, user.Role }
         });
+    }
+
+
+    [HttpPost("refresh")]
+    public async Task<IActionResult> Refresh()
+    {
+        var refreshToken = Request.Cookies["refreshToken"];
+        if (string.IsNullOrEmpty(refreshToken))
+            return Unauthorized("Refresh token is missing.");
+
+        var user = await _jwtRepository.GetByRefreshTokenAsync(refreshToken);
+        if (user == null)
+            return Unauthorized("Invalid refresh token.");
+
+        var tokenEntry = user.RefreshTokens.FirstOrDefault(rt => rt.Token == refreshToken && !rt.Revoked);
+        if (tokenEntry == null || tokenEntry.ExpiresAt <= DateTime.UtcNow)
+            return Unauthorized("Refresh token expired or revoked.");
+
+        var ipAddress = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "unknown";
+        var newRefreshToken = _jwtRepository.GenerateRefreshToken(ipAddress);
+
+        await _jwtRepository.ReplaceRefreshTokenAsync(user.Id, refreshToken, newRefreshToken);
+
+        var accessToken = _jwtTokenGenerator.GenerateToken(user);
+
+        var cookieOptions = new CookieOptions
+        {
+            HttpOnly = true,
+            Secure = true,
+            Expires = newRefreshToken.ExpiresAt,
+            SameSite = SameSiteMode.Strict
+        };
+        Response.Cookies.Append("refreshToken", newRefreshToken.Token, cookieOptions);
+
+        return Ok(new
+        {
+            token = "Bearer " + accessToken,
+            refreshToken = newRefreshToken.Token
+        });
+    }
+
+    [HttpPost("logout")]
+    public async Task<IActionResult> Logout()
+    {
+        var refreshToken = Request.Cookies["refreshToken"];
+        if (string.IsNullOrEmpty(refreshToken))
+            return BadRequest("Refresh token required.");
+
+        var user = await _jwtRepository.GetByRefreshTokenAsync(refreshToken);
+        if (user == null)
+            return NotFound();
+
+        await _jwtRepository.RevokeRefreshTokenAsync(user.Id, refreshToken);
+        Response.Cookies.Delete("refreshToken");
+
+        return Ok(new { message = "Logged out successfully." });
     }
 
     private string GenerateVerificationCode()
