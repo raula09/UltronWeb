@@ -8,6 +8,8 @@ using Microsoft.OpenApi.Models;
 using ProductWeb.Repositories;
 using System.Threading.RateLimiting;
 using System.Net;
+using ProductWeb.Interfaces;
+using ProductWeb.Helpers;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRateLimiter(options =>
@@ -44,6 +46,7 @@ builder.Services.AddRateLimiter(options =>
     };
 });
 
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -77,6 +80,8 @@ builder.Services.AddSwaggerGen(c =>
 });
 builder.Services.AddSingleton<CartRepository>();
 builder.Services.AddSingleton<CheckoutLogRepository>();
+builder.Services.AddScoped<IPhotoService, PhotoService>();
+builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
 
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
@@ -87,6 +92,11 @@ builder.Services.AddSingleton<BlobService>();
 builder.Services.AddSingleton<S3Service>();
 builder.Services.AddSingleton<JwtTokenGenerator>();
 builder.Services.AddScoped<EmailService>();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.OperationFilter<SwaggerFileUploadOperationFilter>();
+});
+
 
 var jwtSettings = builder.Configuration.GetSection("JwtSettings").Get<JwtSettings>();
 var key = Encoding.ASCII.GetBytes(jwtSettings.Secret);

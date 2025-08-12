@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using ProductWeb.Interfaces;
 using ProductWeb.Models;
+using ProductWeb.Models.DTO;
 using ProductWeb.Repositories;
+using ProductWeb.Services;
 
 namespace ProductWeb.Controllers
 {
@@ -10,97 +13,93 @@ namespace ProductWeb.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly ProductRepository _products;
+        private readonly IPhotoService _photoService;
 
-        public ProductsController(ProductRepository productRepo)
+        public ProductsController(ProductRepository productRepo, IPhotoService photoService)
         {
             _products = productRepo;
+            _photoService = photoService;
         }
 
         [HttpGet("all")]
         public IActionResult All()
         {
-            var list = _products.GetAll();
-            return Ok(list);
+            try
+            {
+                var list = _products.GetAll();
+                if (list == null) return NotFound("No products found");
+                return Ok(list);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
-
-        [Authorize(Roles = "Admin")]
         [HttpPost("create")]
-        public IActionResult Create(
-            [FromForm] string name,
-            [FromForm] string description,
-            [FromForm] string size,
-            [FromForm] string color,
-            [FromForm] string category,
-            [FromForm] string material,
-            [FromForm] decimal price,
-            [FromForm] int quantity)  
+        public async Task<IActionResult> Create([FromForm] CreateProductDto dto)
         {
-            if (string.IsNullOrWhiteSpace(name))
-            {
-                return BadRequest("Name required.");
-            }
+            if (dto == null)
+                return BadRequest("Product data is required.");
 
-            if (quantity < 0)
-            {
+            if (string.IsNullOrWhiteSpace(dto.Name))
+                return BadRequest("Name is required.");
+
+            if (dto.Quantity < 0)
                 return BadRequest("Quantity cannot be negative.");
-            }
 
             var product = new Product
             {
-                Name = name,
-                Description = description,
-                Size = size,
-                Color = color,
-                Category = category,
-                Material = material,
-                Price = price,
-                Quantity = quantity 
+                Name = dto.Name,
+                Description = dto.Description,
+                Size = dto.Size,
+                Color = dto.Color,
+                Category = dto.Category,
+                Material = dto.Material,
+                Price = dto.Price,
+                Quantity = dto.Quantity
             };
 
+            if (dto.ImageUrl != null)
+            {
+                var uploadResult = await _photoService.AddPhotoAsync(dto.ImageUrl);
+                if (uploadResult.Error != null)
+                    return BadRequest(uploadResult.Error.Message);
+
+                product.ImageUrl = uploadResult.SecureUrl.ToString();
+            }
+
             _products.Create(product);
+
             return Ok(product);
         }
 
-        [HttpGet("{id}")]
-        public IActionResult GetById(string id)
-        {
-            var p = _products.GetById(id);
-            if (p == null) return NotFound();
-            return Ok(p);
-        }
 
         [Authorize(Roles = "Admin")]
         [HttpPost("update/{id}")]
-        public IActionResult Update(
-            string id,
-            [FromForm] string name,
-            [FromForm] string description,
-            [FromForm] string size,
-            [FromForm] string color,
-            [FromForm] string category,
-            [FromForm] string material,
-            [FromForm] decimal price,
-            [FromForm] int? quantity)  
+        public IActionResult Update(string id, [FromBody] ProductUpdateDto dto)
         {
+            if (dto == null)
+                return BadRequest("Update data is required.");
+
             var product = _products.GetById(id);
             if (product == null) return NotFound();
 
-            if (!string.IsNullOrWhiteSpace(name)) product.Name = name;
-            if (!string.IsNullOrWhiteSpace(description)) product.Description = description;
-            if (!string.IsNullOrWhiteSpace(size)) product.Size = size;
-            if (!string.IsNullOrWhiteSpace(color)) product.Color = color;
-            if (!string.IsNullOrWhiteSpace(category)) product.Category = category;
-            if (!string.IsNullOrWhiteSpace(material)) product.Material = material;
-            if (price > 0) product.Price = price;
-
-            if (quantity.HasValue)
+            if (!string.IsNullOrWhiteSpace(dto.Name)) product.Name = dto.Name;
+            if (!string.IsNullOrWhiteSpace(dto.Description)) product.Description = dto.Description;
+            if (!string.IsNullOrWhiteSpace(dto.Size)) product.Size = dto.Size;
+            if (!string.IsNullOrWhiteSpace(dto.Color)) product.Color = dto.Color;
+            if (!string.IsNullOrWhiteSpace(dto.Category)) product.Category = dto.Category;
+            if (!string.IsNullOrWhiteSpace(dto.Material)) product.Material = dto.Material;
+            if (dto.Price.HasValue && dto.Price.Value > 0) product.Price = dto.Price.Value;
+            if (dto.Quantity.HasValue)
             {
-                if (quantity.Value < 0)
+                if (dto.Quantity.Value < 0)
                     return BadRequest("Quantity cannot be negative.");
-                product.Quantity = quantity.Value;
+                product.Quantity = dto.Quantity.Value;
             }
 
             _products.Update(product);
+
             return Ok(product);
         }
 
@@ -108,6 +107,9 @@ namespace ProductWeb.Controllers
         [HttpPost("delete/{id}")]
         public IActionResult Delete(string id)
         {
+            var product = _products.GetById(id);
+            if (product == null) return NotFound();
+
             _products.Delete(id);
             return Ok(new { message = "Deleted" });
         }
